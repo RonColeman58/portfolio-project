@@ -1,8 +1,10 @@
 import React from 'react'
 import logo from "../Percentage.png";
-import "../App.css" 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import "../App.css"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+
 const Navbar = () => {
     return (
 <nav className="navbar navbar-expand-lg navbar-light bg-dark">

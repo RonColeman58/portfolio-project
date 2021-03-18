@@ -4,10 +4,12 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255 255 255 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
-  font-family: "Robotp Condensed" sans-serif;
+  font-family: "Robotp Condensed", sans-serif;
 }
 /*********************** Navbar *************************/
 
@@ -35,7 +37,7 @@ nav ul li {
   border-top: 0.1575rem solid var(--primary-dark);
 }
 
-navbar-brand {
+.navbar-brand {
   max-width: 17.25rem;
   padding:  0 !important;
   height: 6rem !important;
@@ -47,4 +49,92 @@ navbar-brand {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1575rem solid var(--primary-orange);
+}
+
+
+/* **************** Header ********************* */
+
+nav {
+  z-index: 2;
+}
+
+.header-wrapper {
+  position:  relative;
+  background: url(C:\Users\zendr\Portfolio-Project\jbridges-design\src\components\bluecoats01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Robotp Condensed", sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+
+
+/* ----------Typed Text -------------------- */
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width : 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+}
+
+.typed-text {
+  font-size: 1.3rem !important;
+}
+
+
+/* ************************ Button offer option ******************* */
+
+.btn-main-offer {
+  z-index: 2;
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+/* *******************Particle Styles************************** */
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+.particles-canvas {
+  display: none;
+}
 }
