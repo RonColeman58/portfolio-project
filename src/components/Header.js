@@ -10,7 +10,7 @@ return (
     <h1>Pagentry Arts show development</h1>
     <Typed 
         className="typed-text"
-        strings={["Show Design", "Show Develpoment", "Show Consultations", "Instructional Services"]}
+        strings={["Show Design", "Program Coordination", "Design Consultations", "Instructional Services"]}
         delay={2000}
         typeSpeed={60}
         backSpeed={70}
