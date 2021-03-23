@@ -10,7 +10,7 @@ const Services = () => {
          <h1 className="py-5">my services</h1>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3 col-6">
+                    <div className="col-lg-3 col-md-6 col-6">
                        <div className="box">
                        <div className="circle">
                        <FontAwesomeIcon className="icon" icon={faDesktop} size="2x" />
@@ -20,7 +20,7 @@ const Services = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className="col-md-3 col-6">
+                    <div className="col-lg-3 col-md-6 col-6">
                        <div className="box">
                        <div className="circle">
                        <FontAwesomeIcon className="icon" icon={faFileCode} size="2x" />
@@ -31,25 +31,25 @@ const Services = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className="col-md-3 col-6">
+                    <div className="col-lg-3 col-md-6 col-6">
                        <div className="box">
                        <div className="circle">
                        <FontAwesomeIcon className="icon" icon={faFacebookF} size="2x" />
                        </div>
 
                          <h3>Design Consultations</h3>
-                         <p>Have a show in mind? I can help guide you to the best production of your ideas.</p>
+                         <p>Have a show in mind? I can help production of your ideas.</p>
                         </div>
                     </div>
                     {/*  */}
-                    <div className="col-md-3 col-6">
+                    <div className="col-lg-3 col-md-6 col-6">
                        <div className="box">
                        <div className="circle">
                        <FontAwesomeIcon className="icon" icon={faGoogle} size="2x" />
                        </div>
 
-                         <h3>Instructional Services</h3>
-                         <p>Set guidelines and techniques needed to acheive greater results for time spent. </p>
+                         <h3>Experience</h3>
+                         <p>My abilities are honed through 40yrs participating in pagentry arts. </p>
                         </div>
                     </div>
 
