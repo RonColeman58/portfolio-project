@@ -398,13 +398,13 @@ height: 3.125rem;
   }
 }
 
-@media(max-height: 500px) {
+ @media(max-height: 570px) {
   .popupbox-wrapper {
     height: 90%;
   }
 
   .portfolio-image-popupbox {
-    width: 100%;
+    width: 50%;
   }
 }
 

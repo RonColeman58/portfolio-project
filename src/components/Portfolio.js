@@ -7,7 +7,7 @@ import band04 from "../images/fmbc_at_the_gate.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 // REACT POPUP BOX
-import { PopupboxManager, PopupboxContainer  } from 'react-popupbox';
+import { PopupboxManager, PopupboxContainer  } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 
@@ -19,10 +19,19 @@ const openPopupboxBand01 = () => {
         <>
         <img className="portfolio-image-popupbox" src={band01} alt="Cooper City HS" />
         <p>Ea consectetur amet minim commodo cillum laboris qui.</p>
-        <b>Bands Of America:</b> <a className="hyper-link" onClick={() => window.open("https://marching.musicforall.org/")}>https://marching.musicforall.org/ </a>
+        <b>Bands Of America:</b> <a className="hyper-link" onClick={() => 
+        window.open("https://marching.musicforall.org/")}>https://marching.musicforall.org/ </a>
         </>
     )
-       PopupboxManager.open({ content });
+    PopupboxManager.open({ content });
+      PopupboxManager.update({
+        content,
+        config: {
+        titleBar: {
+          text: "Cooper City HS",
+        },
+      },
+    });
 }
 
 const popupboxConfigBand01 = {
@@ -44,7 +53,17 @@ const openPopupboxBand02 = () => {
         <b>WGI:</b> <a className="hyper-link" onClick={() => window.open("https://wgi.org/")}>https://wgi.org/</a>
         </>
     )
-       PopupboxManager.open({ content });
+    PopupboxManager.open({ content });
+      PopupboxManager.update({
+        content,
+        config: {
+        titleBar: {
+          text: "Indoor Color Guard",
+        },
+      },
+    });
+
+
 }
 
 const popupboxConfigBand02 = {
@@ -65,7 +84,15 @@ const openPopupboxBand03 = () => {
         <b>SFWGA:</b> <a className="hyper-link" onClick={() => window.open("https://sfwga.org/Home.htm")}>https://sfwga.org/Home.htm</a>
         </>
     )
-       PopupboxManager.open({content});
+    PopupboxManager.open({ content });
+      PopupboxManager.update({
+        content,
+        config: {
+        titleBar: {
+          text: "Guard Performer",
+        },
+      },
+    });
 }
 
 const popupboxConfigBand03 = {
@@ -86,7 +113,15 @@ const openPopupboxBand04 = () => {
         <b>Bands Of America:</b> <a className="hyper-link" onClick={() => window.open("https://marching.musicforall.org/")}>https://marching.musicforall.org/</a>
         </>
     )
-       PopupboxManager.open({content});
+    PopupboxManager.open({ content });
+      PopupboxManager.update({
+        content,
+        config: {
+        titleBar: {
+          text: "Guard At The Gate",
+        },
+      },
+    });
 }
 
 const popupboxConfigBand04 = {
