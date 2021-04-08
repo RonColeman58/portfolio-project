@@ -1,77 +1,3 @@
-import React from 'react'
-
-const Contacts = () => {
-  return (
-    <div className="contacts">
-     <div className="text-center">
-      <h1>contact me</h1>
-      <p>Please tell me know about your show and I will contact you as 
-      soon as possible.</p>
-     </div>
-      <div className="container">
-       <div className="row">
-        <div className="col-md-6 col-xs-12">
-         {/* NAME INPUT */}
-         <input 
-           type="text"
-           className="form-control"
-           placeholder="Name"
-           name="name"
-         />
-         {/* PHONE  INPUT */}
-         <input 
-           type="text"
-           className="form-control"
-           placeholder="Phone Number"
-           phone="phone"
-         />
-         {/* EMAIL  INPUT */}
-         <input 
-           type="email"
-           className="form-control"
-           placeholder="Email"
-           email="email"
-         />
-         {/* SUBJECT  INPUT */}
-         <input 
-           type="text"
-           className="form-control"
-           placeholder="Subject"
-           subject="subject"
-         />
-        </div>
-         <div className="col-md-6 col-xs-12">
-          {/* DESCRIPTION  INPUT */}
-         <textarea 
-           className="form-control"
-           placeholder="Description"
-           description="description"
-         />
-         <button className="btn-main-offer center-btn" type="submit">contact me</button>
-
-         </div>
-       </div>       
-      </div>
-    </div>
-  )
-}
-
-export default Contacts
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ///////////////////////////////// Resource Copy /////////////////////////////////////
 
 // import React, { useState } from "react";
@@ -80,7 +6,8 @@ export default Contacts
 
 // const Contacts = () => {
 //   const [successMessage, setSuccessMessage] = useState("");
-//   const { register, handleSubmit, errors } = useForm();
+//   const { register, handleSubmit, formState: { errors }
+// } = useForm();
 
 //   const serviceID = "service_ID";
 //   const templateID = "template_ID";
@@ -122,21 +49,22 @@ export default Contacts
 //             <div className="col-md-6 col-xs-12">
 //               {/* NAME INPUT */}
 //               <div className="text-center">
-//                 <input
+//               <input
 //                   type="text"
 //                   className="form-control"
 //                   placeholder="Name"
 //                   name="name"
-//                   {...register({
-//                       required: "Please enter your name",
-//                       maxLength: {
-//                         value: 20,
-//                         message: "Please enter a name with fewer than 20 characters"
-//                       }
-//                     })
-//                   }
-//                 />
-//                 <div className="line"></div>
+//                   aria-invalid={errors.name ? "true" : "false"}
+//                   {...register("name", {
+//                     required: "Please enter your name",
+//                     maxLength: {
+//                       value: 20,
+//                       message:
+//                         "Please enter a name with fewer than 20 characters",
+//                     },
+//                   })}
+//                 />               
+//                <div className="line"></div>
 //               </div>
 //               <span className="error-message">
 //                 {errors.name && errors.name.message}
@@ -148,17 +76,16 @@ export default Contacts
 //                   className="form-control"
 //                   placeholder="Phone Number"
 //                   name="phone"
-//                   ref={
-//                     register({
-//                       required: "Please add your phone number",
+//                   {...register("Please add your phone number",{
+//                       required: true
 //                     })
 //                   }
 //                 />
 //                 <div className="line"></div>
 //               </div>
-//               <span className="error-message">
+//               {/* <span className="error-message">
 //                 {errors.phone && errors.phone.message}
-//               </span>
+//               </span> */}
 //               {/* EMAIL INPUT */}
 //               <div className="text-center">
 //                 <input
@@ -166,9 +93,8 @@ export default Contacts
 //                   className="form-control"
 //                   placeholder="Email"
 //                   name="email"
-//                   ref={
-//                     register({
-//                       required: "Please provide you email",
+//                   {...register("Please provide you email", {
+//                       required: true,
 //                       pattern: {
 //                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
 //                         message: "invalid Email"
@@ -178,9 +104,9 @@ export default Contacts
 //                 />
 //                 <div className="line"></div>
 //               </div>
-//               <span className="error-message">
+//               {/* <span className="error-message">
 //                 {errors.email && errors.email.message}
-//               </span>
+//               </span> */}
 //               {/* SUBJECT INPUT */}
 //               <div className="text-center">
 //                 <input
@@ -189,16 +115,17 @@ export default Contacts
 //                   placeholder="Subject"
 //                   name="subject"
 //                   ref={
-//                     register({
-//                       required: "OOPS, you forget to add the subject.",
+//                     register("OOPS, you forget to add the subject.",
+//                     {
+//                       required: true,
 //                     })
 //                   }
 //                 />
 //                 <div className="line"></div>
 //               </div>
-//               <span className="error-message">
+//               {/* <span className="error-message">
 //                 {errors.subject && errors.subject.message}
-//               </span>
+//               </span> */}
 //             </div>
 //             <div className="col-md-6 col-xs-12">
 //               {/* DESCRIPTION */}
@@ -209,16 +136,17 @@ export default Contacts
 //                   placeholder="Please describe shortly you project..."
 //                   name="description"
 //                   ref={
-//                     register({
-//                       required: "Please describe shortly your project needs...",
+//                     register("Please describe shortly your project needs...", 
+//                     { 
+//                       required: true,
 //                     })
 //                   }
 //                 ></textarea>
 //                 <div className="line"></div>
 //               </div>
-//               <span className="error-message">
+//               {/* <span className="error-message">
 //                 {errors.description && errors.description.message}
-//               </span>
+//               </span> */}
 //               <button className="btn-main-offer contact-btn" type="submit">contact me</button>
 //             </div>
 //           </div>
@@ -233,125 +161,166 @@ export default Contacts
 ///////////////////////////////Original///////////////////////////////////
 
 
-// import React, { useState } from "react";
-// import emailjs from "emailjs-com";
-// import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import {useForm}  from "react-hook-form";
 
-// const Contacts = () => {
-//   const [successMessage, setSuccessMessage] = useState("");
-//   const { register, handleSubmit, errors } = useForm(); 
+const Contacts = () => {
+  const [successMessage, setSuccessMessage] = useState("");
+  const { register, handleSubmit, formState: { errors } } = useForm(); 
 
-//   const serviceID = "service_ID";
-//   const templateID = "template_ID";
-//   const userID = "user_FaX4yqQXiWfj8ZfmVxho1";
+  const serviceID = "service_ID";
+  const templateID = "template_ID";
+  const userID = "user_FaX4yqQXiWfj8ZfmVxho1";
 
-//   const onSubmit = (data, r) => {
-//     sendEmail(
-//       serviceID, 
-//       templateID,
-//       {
-//        name: data.name,
-//        phone: data.phone,
-//        email: data.email,
-//        suject: data.subject,
-//        description: data.description
-//       },
-//         userID
-//       )
-//       r.target.reset();
-//   }
+  const onSubmit = (data, r) => {
+    sendEmail(
+      serviceID, 
+      templateID,
+      {
+       name: data.name,
+       phone: data.phone,
+       email: data.email,
+       suject: data.subject,
+       description: data.description
+      },
+        userID
+      )
+      r.target.reset();
+  }
 
-//   const sendEmail = (serviceID, templateID, variables, userID) => {
-//     emailjs.send(serviceID, templateID, variables, userID)
-//       .then(() => {
-//         setSuccessMessage("Form sent successfully! I will contact you as soon as possible");
-//       }).catch(err => console.error(`Something went weong ${err}`));
-//   }
+  const sendEmail = (serviceID, templateID, variables, userID) => {
+    emailjs.send(serviceID, templateID, variables, userID)
+      .then(() => {
+        setSuccessMessage("Form sent successfully! I will contact you as soon as possible");
+      }).catch(err => console.error(`Something went weong ${err}`));
+  }
 
 
-// return (
-//     <div className="contacts">
-//       <div className="text-center">
-//         <h1>contact me</h1>
-//         <p>Please fill out the form and leave a description 
-//         of you program needs</p>
-//         {/* <span className="success-message">{successMessage}</span> */}
-//       </div>
-//       <div className="container">
-//       <form onSubmit={handleSubmit(onSubmit)}>
-//         <div className="row">
-//           <div className="col-md-6 col-xs-12">
-//             {/* Name Input */}
-//             <div className="text-center">
-//           <input 
-//               type="text"
-//               className="form-control"
-//               placeholder="Name"
-//               name="name"
-//               ref={
-//                   register({
-//                   required: "Please enter your name",
-//                   maxLength: {
-//                     value: 20,
-//                     message: "Please enter less than 20 characters"
-//                   }
-//                 })
-//               }
-//           />
-//           <div className="line"></div>
-//             </div>
-//             <span className="error-message">
-//               {errors.name && errors.name.message}
-//             </span>
-//             {/* Phone Number */}
-//             <div className="text-center">
-//           <input 
-//               type="text"
-//               className="form-control"
-//               placeholder="Phone Number"
-//               name="phone"
-//           />
-//           <div className="line"></div>
-//               </div>
-//             {/* Email Address */}
-//             <div className="text-center">
-//           <input 
-//               type="text"
-//               className="form-control"
-//               placeholder="Email"
-//               name="email"
-//           />
-//           <div className="line"></div>
-//             </div>
-//             {/* Subject */}
-//             <div className="text-center">
-//           <input
-//               type="text" 
-//               className="form-control"
-//               placeholder="Subject"
-//               name="subject"
-//           />
-//           <div className="line"></div>
-//             </div>
-//           </div>
-//           <div className="col-md-6 col-xs-12">
-//             {/* Description Area */}
-//             <div className="text-center">
-//             <textarea 
-//               type="text"
-//               className="form-control"
-//               placeholder="Please leave a short description of your show"
-//               name="description"
-//             ></textarea>
-//             <div className="line"></div>
-//             </div>
-//             <button className="btn-main-offer contacts-btn" type="submit">contact me</button>
-//           </div>
-//         </div>
-//         </form>
-//       </div>
-//     </div>
-//   )
-// }
+return (
+    <div className="contacts">
+      <div className="text-center">
+        <h1>contact me</h1>
+        <p>Please fill out the form and leave a description 
+        of you program needs</p>
+        <span className="success-message">{successMessage}</span>
+      </div>
+      <div className="container">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="row">
+          <div className="col-md-6 col-xs-12">
+            {/* Name Input */}
+            <div className="text-center">
+            <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  name="name"
+                  aria-invalid={errors.name ? "true" : "false"}
+                  {...register("name", {
+                    required: "Please enter your name",
+                    maxLength: {
+                      value: 20,
+                      message:
+                        "Please enter a name with fewer than 20 characters",
+                    },
+                  })}
+                />         
+             <div className="line"></div>
+            </div>
+            <span className="error-message">
+              {errors.name && errors.name.message}
+            </span>
+            {/* Phone Number */}
+            <div className="text-center">
+            <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Phone Number"
+                  name="phone"
+                  aria-invalid={errors.phone ? "true" : "false"}
+                  {...register("phone", {
+                    required: "Please enter a phone number",
+                    },
+                  )}
+                />         
+              <div className="line"></div>
+              </div>
+              <span className="error-message">
+              {errors.phone && errors.phone.message}
+            </span>
 
-// export default Contacts;
+            {/* Email Address */}
+            <div className="text-center">
+            <input
+            type="email"
+            className="form-control"
+            placeholder="Email"
+            name="email"
+            aria-invalid={errors.email ? "true" : "false"}
+            {...register("email", {
+                required: "Please provide an email",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "invalid Email"
+                }
+              })
+            }
+          />
+          <div className="line"></div>
+            </div>
+          <span className="error-message">
+            {errors.email && errors.email.message}
+          </span>
+            {/* Subject */}
+            <div className="text-center">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Subject"
+            name="subject"
+            aria-invalid={errors.subject ? "true" : "false"}
+            {...register("subject",
+              {
+                required: "OOPS, you forget to add the subject.",
+              })
+            }
+          />
+          <div className="line"></div>
+            </div>
+            <span className="error-message">
+              {errors.subject && errors.subject.message}
+            </span>
+
+          </div>
+          <div className="col-md-6 col-xs-12">
+            {/* Description Area */}
+            <div className="text-center">
+            <textarea 
+              type="text"
+              className="form-control"
+              placeholder="Please leave a short description of your show"
+              name="description"
+              aria-invalid={errors.description ? "true" : "false"}
+            {...register("description",
+              {
+                required: "Please describe your project.",
+              })
+            }
+          >
+            </textarea>
+            <span className="error-message">
+              {errors.description && errors.description.message}
+            </span>
+            <div className="line"></div>
+            </div>
+            <button className="btn-main-offer contacts-btn" type="submit">contact me</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+export default Contacts;

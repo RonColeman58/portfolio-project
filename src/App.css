@@ -9,6 +9,7 @@
   --primary-dark: rgb(52, 58, 64,);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-green: green;
   --primary-black: #000000;
   --primary-transparent-black: rgba(0,0,0,0.7);
 }
@@ -554,8 +555,15 @@ input.form-control {
 textarea.form-control {
   margin: -0.3rem 0;
 }
+/* --------------------Input errors------------------------ */
 
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-red);
+  text-align: left;
+}
 
+.success-message {}
 
 /* ***********************Media for Imput ****************************** */
 @media(max-width: 768px) {
