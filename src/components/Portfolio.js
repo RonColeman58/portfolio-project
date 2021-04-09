@@ -1,4 +1,5 @@
 import React from 'react';
+// IMPORTED IMAGES
 import band01 from "../images/cchs01.jpg";
 import band02 from "../images/guard01.jpg";
 import band03 from "../images/guard02.webp";

@@ -379,8 +379,12 @@ height: 3.125rem;
 
 /* ***************************** Popupbox ******************************** */
 .portfolio-image-popupbox {
-  width: 25rem;
+  width: 22rem;
   padding: 0 0.5;
+}
+
+.popupbox-wrapper {
+  margin-top:  7rem;
 }
 
 .hyper-link {
