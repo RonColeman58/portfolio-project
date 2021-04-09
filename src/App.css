@@ -49,7 +49,7 @@ nav ul li {
   height: 6rem !important;
 }
 
-.navbar-nav > li > a:active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a:active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -69,7 +69,7 @@ nav {
   background: url(C:\Users\zendr\OneDrive\Desktop\portfolio-project\src\components\bluecoats01.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -578,4 +578,26 @@ textarea.form-control {
     padding: 0.4rem;
   }
 
+}
+
+/* **************** Footer Component ********************* */
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-light-gray);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-gray);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
