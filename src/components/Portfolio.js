@@ -4,6 +4,7 @@ import band01 from "../images/cchs01.jpg";
 import band02 from "../images/guard01.jpg";
 import band03 from "../images/guard02.webp";
 import band04 from "../images/fmbc_at_the_gate.webp";
+import band05 from "../images/NewsomeWinterGuard.jpg";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -134,6 +135,36 @@ const popupboxConfigBand04 = {
     fadeInSpeed: 500
 }
 
+// Band05
+const openPopupboxBand05 = () => {
+  const content = (
+      <>
+      <img className="portfolio-image-popupbox" src={band05} alt="FFCC Championships" />
+      <p>Ea consectetur amet minim commodo cillum laboris qui.</p>
+      <b>FFCC:</b> <a className="hyper-link" onClick={() => window.open("https://ffcc.org/Home.htm")}>https://ffcc.org/Home.htm</a>
+      </>
+  )
+  PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+      titleBar: {
+        text: "Guard Performer",
+      },
+    },
+  });
+}
+
+const popupboxConfigBand05 = {
+  titleBar: {
+      enable: true,
+      text: "FFCC Championships"
+  },
+  fadeIn: true,
+  fadeInSpeed: 500
+}
+
+
     return (
 <div id="portfolio" className="portfolio-wrapper">
   <div className="container">
@@ -157,10 +188,16 @@ const popupboxConfigBand04 = {
       <FontAwesomeIcon className="portfolio-icon" icon={ faSearchPlus } />
      </div> 
     {/*  */}
-     <div className="portfolio-image-box" onClick={openPopupboxBand04}> 
+    <div className="portfolio-image-box" onClick={openPopupboxBand04}> 
     <img className="portfolio-image" src={band04} alt="Color Guard at starting gate" />
     <div className="overflow"></div>
     <FontAwesomeIcon className="portfolio-icon" icon={ faSearchPlus } />
+     </div> 
+    {/*  */}
+      <div className="portfolio-image-box" onClick={openPopupboxBand05}> 
+      <img className="portfolio-image" src={band05} alt="FFCC Championships" />
+      <div className="overflow"></div>
+      <FontAwesomeIcon className="portfolio-icon" icon={ faSearchPlus } />
      </div> 
   </div>  
  </div>  
@@ -168,7 +205,7 @@ const popupboxConfigBand04 = {
         <PopupboxContainer { ...popupboxConfigBand02} />
         <PopupboxContainer { ...popupboxConfigBand03} />
         <PopupboxContainer { ...popupboxConfigBand04} />
-       
+        <PopupboxContainer { ...popupboxConfigBand05} />
 </div>
   )
 }
