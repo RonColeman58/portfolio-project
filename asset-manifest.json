@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/RonColeman58/portfolio-project.git/static/css/main.4705b70c.chunk.css",
+    "main.js": "/RonColeman58/portfolio-project.git/static/js/main.07c99fdb.chunk.js",
+    "main.js.map": "/RonColeman58/portfolio-project.git/static/js/main.07c99fdb.chunk.js.map",
+    "runtime-main.js": "/RonColeman58/portfolio-project.git/static/js/runtime-main.e476461b.js",
+    "runtime-main.js.map": "/RonColeman58/portfolio-project.git/static/js/runtime-main.e476461b.js.map",
+    "static/css/2.adb406d7.chunk.css": "/RonColeman58/portfolio-project.git/static/css/2.adb406d7.chunk.css",
+    "static/js/2.7ec899d1.chunk.js": "/RonColeman58/portfolio-project.git/static/js/2.7ec899d1.chunk.js",
+    "static/js/2.7ec899d1.chunk.js.map": "/RonColeman58/portfolio-project.git/static/js/2.7ec899d1.chunk.js.map",
+    "static/js/3.6ee8375a.chunk.js": "/RonColeman58/portfolio-project.git/static/js/3.6ee8375a.chunk.js",
+    "static/js/3.6ee8375a.chunk.js.map": "/RonColeman58/portfolio-project.git/static/js/3.6ee8375a.chunk.js.map",
+    "index.html": "/RonColeman58/portfolio-project.git/index.html",
+    "static/css/2.adb406d7.chunk.css.map": "/RonColeman58/portfolio-project.git/static/css/2.adb406d7.chunk.css.map",
+    "static/css/main.4705b70c.chunk.css.map": "/RonColeman58/portfolio-project.git/static/css/main.4705b70c.chunk.css.map",
+    "static/js/2.7ec899d1.chunk.js.LICENSE.txt": "/RonColeman58/portfolio-project.git/static/js/2.7ec899d1.chunk.js.LICENSE.txt",
+    "static/media/Jeff_logo.0cbf2377.jpg": "/RonColeman58/portfolio-project.git/static/media/Jeff_logo.0cbf2377.jpg",
+    "static/media/Percentage.bfba6f9c.png": "/RonColeman58/portfolio-project.git/static/media/Percentage.bfba6f9c.png",
+    "static/media/avatar-1.9277ecea.png": "/RonColeman58/portfolio-project.git/static/media/avatar-1.9277ecea.png",
+    "static/media/avatar-2.75d8f23e.png": "/RonColeman58/portfolio-project.git/static/media/avatar-2.75d8f23e.png",
+    "static/media/avatar-3.d6c9b46f.png": "/RonColeman58/portfolio-project.git/static/media/avatar-3.d6c9b46f.png",
+    "static/media/avatar-4.f7fb7ed7.png": "/RonColeman58/portfolio-project.git/static/media/avatar-4.f7fb7ed7.png",
+    "static/media/App.css": "/RonColeman58/portfolio-project.git/static/media/testimonials-bg.75612be7.jpg",
+    "static/media/cchs01.1f4155e9.jpg": "/RonColeman58/portfolio-project.git/static/media/cchs01.1f4155e9.jpg",
+    "static/media/fmbc_at_the_gate.024c2af4.webp": "/RonColeman58/portfolio-project.git/static/media/fmbc_at_the_gate.024c2af4.webp",
+    "static/media/guard01.cc190a54.jpg": "/RonColeman58/portfolio-project.git/static/media/guard01.cc190a54.jpg",
+    "static/media/guard02.ba2b77dc.webp": "/RonColeman58/portfolio-project.git/static/media/guard02.ba2b77dc.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e476461b.js",
+    "static/css/2.adb406d7.chunk.css",
+    "static/js/2.7ec899d1.chunk.js",
+    "static/css/main.4705b70c.chunk.css",
+    "static/js/main.07c99fdb.chunk.js"
+  ]
+}
