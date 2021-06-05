@@ -13,7 +13,7 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-dom": "^17.0.1",
     "react-fontawesome": "^1.7.1",
     "react-hook-form": "^7.0.3",
@@ -32,9 +32,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/RonColeman58/portfolio-project.git"
+  "homepage": "https://github.com/RonColeman58/portfolio-project.git",
   "eslintConfig": {
     "extends": [
       "react-app",

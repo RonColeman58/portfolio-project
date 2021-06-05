@@ -67,7 +67,8 @@ nav {
 
 .header-wrapper {
   position: relative;
-  background: url(C:\Users\zendr\OneDrive\Desktop\portfolio-project\src\components\bluecoats01.jpg)
+background : url(C:\Users\zendr\desktop\portfolio-project\src\images\bluecoats.jpg)
+
     no-repeat;
   background-size: cover;
   background-position: center;
@@ -425,7 +426,8 @@ nav {
 /* ***************************** Testimonials ******************************** */
 
 .testimonials {
-  background-image: url(C:\Users\zendr\OneDrive\Desktop\portfolio-project\src\testimonials-bg.jpg);
+background-image : url(C:\Users\zendr\desktop\portfolio-project\src\testimonials-bg.jpg);
+
   background-size: cover;
   background-color: var(--primary-black);
   text-align: center;
